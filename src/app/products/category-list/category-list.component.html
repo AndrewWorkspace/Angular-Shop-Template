@@ -1,0 +1,9 @@
+<section class="bg-default">
+    <div class="container" >
+            <div class="row row-30">
+                <div class="col-lg-3" *ngFor="let category of categories ">
+                    <app-category-list-item [categoryItem]='category'></app-category-list-item>
+                </div>
+            </div>
+        </div>
+</section>

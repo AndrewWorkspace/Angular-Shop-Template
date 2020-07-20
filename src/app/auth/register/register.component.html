@@ -1,0 +1,40 @@
+<app-header></app-header>
+
+<section class="single-section">
+    <div class="form-wrapper">
+        <div class="form-title">
+            Register Form
+        </div>
+        <form class="register-form auth-form" [formGroup]="registerForm" (ngSubmit)="signup()">
+
+            <div class="form-group">
+                <mat-form-field>
+                    <input type="email" formControlName="name" class="form-control" matInput placeholder="E-mail">
+                    <mat-error *ngIf="form.email.hasError('required')">Email is required</mat-error>
+
+                </mat-form-field>
+            </div>
+            <div class="form-group">
+                <mat-form-field>
+                    <input type="password" formControlName="password" class="form-control" matInput placeholder="Password">
+                    <mat-error *ngIf="form.password.errors && form.password.errors.required">Password is required</mat-error>
+                    <mat-error *ngIf="form.password.hasError('minlength')">Password must be at least 6 characters</mat-error>
+                </mat-form-field>
+            </div>
+            <!-- <div class="form-group">
+                <mat-form-field>
+                    <input type="password" formControlName="confirmPassword" class="form-control" matInput placeholder="Confirm Password">
+                    <mat-error *ngIf="form.confirmPassword.errors && form.confirmPassword.errors.required">Confirm Password is required</mat-error>
+                    <mat-error *ngIf="form.confirmPassword.errors && form.confirmPassword.mustMatch">Passwords must match</mat-error>
+                </mat-form-field>
+            </div> -->
+            <div class="form-group">
+                <button mat-button class="button btn btn-primary btn-block" type="submit" [disabled]="registerForm.invalid">
+                    Register
+                </button>
+            </div>
+        </form>
+    </div>
+</section>
+
+<app-footer></app-footer>

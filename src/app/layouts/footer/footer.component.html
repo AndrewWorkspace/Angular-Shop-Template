@@ -1,0 +1,45 @@
+<footer>
+  <div class="footer-main">
+      <div class="container">
+        <div class="row row-30">
+          <div class="col-xl-4 d-flex align-items-center ">
+            <a routerLink='/home' class="footer-logo">
+              <img src="assets/images/logo.png" alt="">
+            </a>
+          </div>
+          <div class="col-xl-4">
+            <h3 class="heading"> Address</h3>
+            <p class="block-xs">
+              1418 Riverwood Drive,
+              Suite 3845 Cottonwood,
+              CA 96022
+              United States
+            </p>
+          </div>
+          <div class="col-xl-4">
+            <h3 class="heading"> Contacts</h3>
+            <ul>
+              <li>
+                <a href="tel:#">1-300-123-1234</a>
+              </li>
+              <li> <a href="mailto:#">demolink@gmail.comn</a></li>
+              <li>
+                <app-social-list></app-social-list>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+  </div>
+    <div class="footer-aside">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 text-left">© {{currentDate | date: 'yyyy'}} EuroCar. All Rights reserved</div>
+          <div class="col-6 text-right">
+            <a href="#" class="privacy-link">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+    </div>
+</footer>

@@ -1,0 +1,12 @@
+<section class="section-sm bg-default pt-0">
+  <div class="container">
+    <div class="row row-30 justify-content-center">
+      <div class="col-12 text-center">
+        <button mat-raised-button color="green">Add Post</button>
+      </div>
+      <div class="col-xl-4" *ngFor="let post of posts ">
+        <app-post-list-item  [postItem]='post'></app-post-list-item>
+      </div>
+    </div>
+  </div>
+</section>

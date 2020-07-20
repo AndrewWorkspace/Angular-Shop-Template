@@ -1,0 +1,15 @@
+.social-list{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -10px;
+  margin-top: -5px;
+  > * {
+    margin-left: 10px;
+    margin-top: 5px;
+  }
+  li{
+    list-style: none;
+
+  }
+
+}

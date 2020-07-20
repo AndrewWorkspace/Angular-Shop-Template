@@ -1,0 +1,29 @@
+<div class="post-item">
+  <a routerLink="/about" class="post-item__media">
+    <img src="{{postItem.postImage}}" alt="">
+    <div class="label">
+      {{postItem.postLabel}}
+    </div>
+  </a>
+  <h4>
+    <a class="title"> {{postItem.postTitle}}e </a>
+  </h4>
+  <p>
+    {{postItem.postCaption}}
+  </p>
+  <div class="post-item__group">
+    <div class="post-item__date">
+      {{postItem.postDate}}
+    </div>
+    <a mat-raised-button routerLink="/about" class="post-item__link mat-raised-button mat-button-base mat-primary">More</a>
+  </div>
+  <div class="post-configuration">
+    <button mat-raised-button color="primary">Edit</button>
+    <button mat-raised-button color="warn">Delete</button>
+  </div>
+
+<!--  <div class="action-block">-->
+<!--    -->
+<!--  </div>-->
+</div>
+
